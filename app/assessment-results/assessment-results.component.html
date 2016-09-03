@@ -8,9 +8,9 @@
 			<thead>
 				<tr>
 					<td>User</td>
-					<td>Item 1</td>
-					<td>Item 2</td>
-					<td>Item 3</td>
+					<td *ngFor="let question of assessment.questions">
+						Item {{question.seqNum}}
+					</td>
 					<td>Score</td>
 				</tr>
 			</thead>
