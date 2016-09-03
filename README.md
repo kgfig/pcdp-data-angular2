@@ -5,4 +5,5 @@ See required NodeJS and npm version here: https://angular.io/docs/ts/latest/quic
 
 
 npm install
+
 npm start
