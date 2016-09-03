@@ -9,8 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var assessment_service_1 = require('./assessment-service');
-var result_service_1 = require('./result-service');
+var assessment_service_1 = require('./assessment.service');
+var result_service_1 = require('./result.service');
 var AssessmentResultsComponent = (function () {
     function AssessmentResultsComponent(assessmentService, resultService) {
         this.assessmentService = assessmentService;
@@ -25,7 +25,6 @@ var AssessmentResultsComponent = (function () {
             selector: 'assessment-results',
             templateUrl: 'app/assessment-results/assessment-results.component.html',
             styleUrls: ['vendor/bootstrap/css/bootstrap.min.css'],
-            providers: [assessment_service_1.AssessmentService, result_service_1.ResultService]
         }), 
         __metadata('design:paramtypes', [assessment_service_1.AssessmentService, result_service_1.ResultService])
     ], AssessmentResultsComponent);
