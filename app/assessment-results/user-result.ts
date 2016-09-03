@@ -7,13 +7,8 @@ export class User {
 	email: string;
 }
 
-export class Answer {
-	value: Choice;
-	question: Question;
-}
-
 export class UserResult {
 	user: User;
-	answers: Answer[];
+	answers: Choice[];
 	score: number;
 }

@@ -3,3 +3,5 @@ node_modules/*
 app/*.js
 app/assessment-results/*.js
 app/*/*.*.js
+app/*.js
+app/*/*.js
