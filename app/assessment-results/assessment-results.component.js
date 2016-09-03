@@ -9,50 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var assessment_service_1 = require('./assessment-service');
+var result_service_1 = require('./result-service');
 var AssessmentResultsComponent = (function () {
-    function AssessmentResultsComponent() {
-        this.assessment = {
-            "id": 1,
-            "title": "Assessment for Subskill 1A",
-            "type": 3
-        };
-        this.results = [
-            {
-                "user": {
-                    "id": "juandcfromMFI",
-                    "username": "juandc",
-                    "name": "Juanita",
-                    "email": "juandc@pcdpforever.com"
-                },
-                "answers": []
-            },
-            {
-                "user": {
-                    "id": "songokuthesupersaiyan",
-                    "username": "songoku",
-                    "name": "Goku",
-                    "email": "songoku@pcdpforever.com"
-                },
-                "answers": []
-            },
-            {
-                "user": {
-                    "id": "saitamathecapedbaldy",
-                    "username": "capedbaldy",
-                    "name": "Saitama",
-                    "email": "saitamathecapedbaldy@pcdpforever.com"
-                },
-                "answers": []
-            }
-        ];
+    function AssessmentResultsComponent(assessmentService, resultService) {
+        this.assessmentService = assessmentService;
+        this.resultService = resultService;
     }
+    AssessmentResultsComponent.prototype.ngOnInit = function () {
+        this.assessment = this.assessmentService.getAssessment();
+        this.results = this.resultService.getResults();
+    };
     AssessmentResultsComponent = __decorate([
         core_1.Component({
             selector: 'assessment-results',
             templateUrl: 'app/assessment-results/assessment-results.component.html',
-            styleUrls: ['vendor/bootstrap/css/bootstrap.min.css']
+            styleUrls: ['vendor/bootstrap/css/bootstrap.min.css'],
+            providers: [assessment_service_1.AssessmentService, result_service_1.ResultService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [assessment_service_1.AssessmentService, result_service_1.ResultService])
     ], AssessmentResultsComponent);
     return AssessmentResultsComponent;
 }());

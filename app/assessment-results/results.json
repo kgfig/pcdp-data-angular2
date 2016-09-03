@@ -1,0 +1,31 @@
+{
+	"data": [
+		{
+			"user": {
+				"id": "juandcfromMFI", 
+				"username": "juandc",
+				"name": "Juanita",
+				"email": "juandc@pcdpforever.com"
+			},
+			"answers": []
+		},
+		{
+			"user": {
+				"id": "songokuthesupersaiyan", 
+				"username": "songoku",
+				"name": "Goku",
+				"email": "songoku@pcdpforever.com"
+			},
+			"answers": []
+		},
+		{
+			"user": {
+				"id": "saitamathecapedbaldy", 
+				"username": "capedbaldy",
+				"name": "Saitama",
+				"email": "saitamathecapedbaldy@pcdpforever.com"
+			},
+			"answers": []
+		}
+	]
+}
