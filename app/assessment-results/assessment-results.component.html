@@ -1,13 +1,27 @@
-teststessetst
-
-<h2>{{ assessment.title }}</h2>
-
-<table>
-	<th>
-		<td>User</td>
-		<td>Item 1</td>
-		<td>Item 2</td>
-		<td>Item 3</td>
-		<td>Score</td>
-	</th>
-</table>
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">{{assessment.title}}</div>
+		<div class="panel-body">
+			Description here
+		</div>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>User</td>
+					<td>Item 1</td>
+					<td>Item 2</td>
+					<td>Item 3</td>
+					<td>Score</td>
+				</tr>
+			</thead>
+			<tbody *ngFor="let result of results">
+				<tr>
+					<td>{{result.user.name}}</td>
+					<td *ngFor="let answer of result.answers">
+						{{answer.value.letter}}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
