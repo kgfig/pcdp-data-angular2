@@ -1,6 +1,8 @@
 # pcdp-data
-Angular 2 app for presenting assessment results for CTAPS... and possibly for the projects too if time permits :)
+# Angular2 app for presenting assessment results for CTAPS... and possibly for the projects too if time permits :)
 
-To get started, follow the 5-minute quickstart guide for Angular 2 for TypeScript.
+See required NodeJS and npm version here: https://angular.io/docs/ts/latest/quickstart.html
 
-https://angular.io/docs/ts/latest/quickstart.html
+
+npm install
+npm start
