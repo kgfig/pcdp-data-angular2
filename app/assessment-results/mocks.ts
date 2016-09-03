@@ -15,7 +15,8 @@ export const RESULTS: UserResult[] = [
 			"name": "Juanita",
 			"email": "juandc@pcdpforever.com"
 		},
-		"answers": []
+		"answers": [],
+		"score": 3
 	},
 	{
 		"user": {
@@ -24,7 +25,8 @@ export const RESULTS: UserResult[] = [
 			"name": "Goku",
 			"email": "songoku@pcdpforever.com"
 		},
-		"answers": []
+		"answers": [],
+		"score": 1
 	},
 	{
 		"user": {
@@ -33,6 +35,7 @@ export const RESULTS: UserResult[] = [
 			"name": "Saitama",
 			"email": "saitamathecapedbaldy@pcdpforever.com"
 		},
-		"answers": []
+		"answers": [],
+		"score": 0
 	}
 ];

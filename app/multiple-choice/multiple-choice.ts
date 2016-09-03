@@ -8,4 +8,6 @@ export class Choice {
 	question: Question;
 	content: string;
 	letter: string;
+	correct: boolean;
+	points: number;
 }

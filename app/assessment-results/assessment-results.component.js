@@ -23,8 +23,7 @@ var AssessmentResultsComponent = (function () {
     AssessmentResultsComponent = __decorate([
         core_1.Component({
             selector: 'assessment-results',
-            templateUrl: 'app/assessment-results/assessment-results.component.html',
-            styleUrls: ['vendor/bootstrap/css/bootstrap.min.css'],
+            templateUrl: 'app/assessment-results/assessment-results.component.html'
         }), 
         __metadata('design:paramtypes', [assessment_service_1.AssessmentService, result_service_1.ResultService])
     ], AssessmentResultsComponent);

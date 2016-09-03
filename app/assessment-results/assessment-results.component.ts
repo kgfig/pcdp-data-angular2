@@ -7,8 +7,7 @@ import { ASSESSMENT, RESULTS } from './mocks';
 
 @Component({
 	selector: 'assessment-results',
-	templateUrl: 'app/assessment-results/assessment-results.component.html',
-	styleUrls: ['vendor/bootstrap/css/bootstrap.min.css'],
+	templateUrl: 'app/assessment-results/assessment-results.component.html'
 })
 export class AssessmentResultsComponent implements OnInit {
 	results: UserResult[];
@@ -20,4 +19,5 @@ export class AssessmentResultsComponent implements OnInit {
 		this.assessment = this.assessmentService.getAssessment();
 		this.results = this.resultService.getResults();
 	}
+
 }

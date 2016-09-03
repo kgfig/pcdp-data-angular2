@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 // Our app
 import { AppComponent } from './app.component';
 import { AssessmentResultsComponent } from './assessment-results/assessment-results.component';
+//import { UserResultComponent } from './assessment-results/user-result.component';
 import { AssessmentService } from './assessment-results/assessment.service';
 import { ResultService } from './assessment-results/result.service';
 
@@ -17,6 +18,7 @@ import { ResultService } from './assessment-results/result.service';
 	declarations: [
 		AppComponent,
 		AssessmentResultsComponent
+		//UserResultComponent
 	],
 	providers: [
 		AssessmentService,

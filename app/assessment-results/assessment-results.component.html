@@ -14,12 +14,13 @@
 					<td>Score</td>
 				</tr>
 			</thead>
-			<tbody *ngFor="let result of results">
-				<tr>
+			<tbody >
+				<tr *ngFor="let result of results">
 					<td>{{result.user.name}}</td>
 					<td *ngFor="let answer of result.answers">
 						{{answer.value.letter}}
 					</td>
+					<td>{{result.score}}</td>
 				</tr>
 			</tbody>
 		</table>

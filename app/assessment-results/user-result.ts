@@ -1,4 +1,4 @@
-import { Question, Choice } from './multiple-choice';
+import { Question, Choice } from '../multiple-choice/multiple-choice';
 
 export class User {
 	id: string;
@@ -15,4 +15,5 @@ export class Answer {
 export class UserResult {
 	user: User;
 	answers: Answer[];
+	score: number;
 }
