@@ -1,23 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Assessment } from './assessment';
-import { UserResult } from './user-result';
+import { User } from './user';
 import { AssessmentService } from './assessment.service';
-import { ResultService } from './result.service';
-import { ASSESSMENT, RESULTS } from './mocks';
+import { UserService } from './user.service';
 
 @Component({
 	selector: 'assessment-results',
 	templateUrl: 'app/assessment-results/assessment-results.component.html'
 })
 export class AssessmentResultsComponent implements OnInit {
-	results: UserResult[];
+	results: User[];
 	assessment: Assessment;
 
-	constructor(private assessmentService: AssessmentService, private resultService: ResultService ) {}
+	constructor(private assessmentService: AssessmentService, private userService: UserService ) {}
 
 	ngOnInit() {
 		this.assessment = this.assessmentService.getAssessment();
-		this.results = this.resultService.getResults();
+		this.results = this.userService.getResults();
 	}
 
 }
