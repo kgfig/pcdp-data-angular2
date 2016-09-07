@@ -5,7 +5,7 @@ import { ASSESSMENT } from './mocks';
 
 @Injectable()
 export class AssessmentService {
-	getAssessment(): Assessment {
-		return ASSESSMENT;
+	getAssessment(): Promise<Assessment> {
+		return Promise.resolve(ASSESSMENT);
 	}
 }

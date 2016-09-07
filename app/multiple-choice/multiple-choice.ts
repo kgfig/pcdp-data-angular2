@@ -9,4 +9,5 @@ export class Question {
 	content: string;
 	choices: Choice[];
 	points: number;
+	seq_num: number;
 }

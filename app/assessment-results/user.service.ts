@@ -5,7 +5,7 @@ import { USER_RESULTS } from './mocks';
 
 @Injectable()
 export class UserService {
-	getResults(): User[] {
-		return USER_RESULTS;
+	getResults(): Promise<User[]> {
+		return Promise.resolve(USER_RESULTS);
 	}
 }

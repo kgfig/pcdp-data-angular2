@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="assessment">
 	<div class="panel panel-default">
 		<div class="panel-heading">{{assessment.title}}</div>
 		<div class="panel-body">
@@ -9,7 +9,7 @@
 				<tr>
 					<td>User</td>
 					<td *ngFor="let question of assessment.questions">
-						Item {{question.seqNum}}
+						Item {{question.seq_num}}
 					</td>
 					<td>Score</td>
 				</tr>

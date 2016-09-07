@@ -14,9 +14,9 @@ export class AssessmentResultsComponent implements OnInit {
 
 	constructor(private assessmentService: AssessmentService, private userService: UserService ) {}
 
-	ngOnInit() {
-		this.assessment = this.assessmentService.getAssessment();
-		this.results = this.userService.getResults();
+	ngOnInit(): void {
+		this.assessmentService.getAssessment().then(assessment => this.assessment = assessment);
+		this.userService.getResults().then(results => this.results = results);
 	}
 
 }

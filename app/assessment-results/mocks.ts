@@ -61,19 +61,22 @@ export const QUESTIONS: Question[] = [
 		"id": 1,
 		"content": "What is the meaning of life?",
 		"choices": CHOICES_FOR_ITEM1,
-		"points": 1
+		"points": 1,
+		"seq_num": 1
 	},
 	{
 		"id": 2,
 		"content": "Sinong kumuha ng biskwit sa garapon?",
 		"choices": CHOICES_FOR_ITEM2,
-		"points": 1
+		"points": 1,
+		"seq_num": 2
 	},
 	{
 		"id": 3,
 		"content": "If you were a mermaid, what do you say when Luffy asks, how do you poop?",
 		"choices": CHOICES_FOR_ITEM3,
-		"points": 1
+		"points": 1,
+		"seq_num": 3
 	}
 ]
 
