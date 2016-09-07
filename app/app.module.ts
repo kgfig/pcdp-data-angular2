@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { AssessmentResultsComponent } from './assessment-results/assessment-results.component';
 //import { UserResultComponent } from './assessment-results/user-result.component';
 import { AssessmentService } from './assessment-results/assessment.service';
-import { ResultService } from './assessment-results/result.service';
+import { UserService } from './assessment-results/user.service';
 
 @NgModule({
 	imports: [
@@ -22,7 +22,7 @@ import { ResultService } from './assessment-results/result.service';
 	],
 	providers: [
 		AssessmentService,
-		ResultService
+		UserService
 	],
 	bootstrap: [
 		AppComponent

@@ -16,11 +16,11 @@
 			</thead>
 			<tbody >
 				<tr *ngFor="let result of results">
-					<td>{{result.user.name}}</td>
+					<td>{{result.firstname}} {{result.surname}}</td>
 					<td *ngFor="let answer of result.answers">
 						{{answer.letter}}
 					</td>
-					<td>{{result.score}}</td>
+					<td>0</td>
 				</tr>
 			</tbody>
 		</table>
